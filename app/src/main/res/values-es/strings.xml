@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProfessorLuchador</string>
+    <string name="select_label">Seleccione Su Profesor</string>
+    <string name="select_label_land">Seleccione\nSu\nProfesor</string>
+    <string name="select_button">SELECCIONAR</string>
+    <string name="selected_label">Seleccionado</string>
+    <string name="attack_label">Ataque</string>
+    <string name="victory_label">ha derrotado al profesor</string>
+
+    <string-array name="professor_descriptions">
+        <item>Experto en todas las longitudes de alambres.</item>
+        <item>Tiene tenencia, una gran beca de investigación, acceso a un laboratorio, y cinco estudiantes graduados (al menos tres de ellos son chinos). También es evidente que él es un imbécil.</item>
+        <item>Ethan \"Bubblegum\" Tate es el comandante de los Globetrotters y profesor titular de física en la Universidad Globetrotter.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ProfessorFight</string>
+    <string name="select_label">Select Your Professor</string>
+    <string name="select_label_land">Select\nYour\nProfessor</string>
+    <string name="select_button">SELECT</string>
+    <string name="selected_label">Selected</string>
+    <string name="attack_label">Attack</string>
+    <string name="victory_label">has defeated professor</string>
+
+    <string-array name="professor_names">
+        <item>Farnsworth</item>
+        <item>Wernstrom</item>
+        <item>Tate</item>
+    </string-array>
+
+    <string-array name="professor_descriptions">
+        <item>Expert in all lengths of wires.</item>
+        <item>Has tenure, a big research grant, access to a lab, and five graduate students (at least three of them Chinese). It is also apparent that he is a jackass.</item>
+        <item>Ethan \"Bubblegum\" Tate is the commander of the Globetrotters and senior lecturer of physics at Globetrotter University.</item>
+    </string-array>
+
+    <string name="title_activity_battle">BattleActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
