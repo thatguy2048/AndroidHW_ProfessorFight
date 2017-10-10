@@ -69,6 +69,13 @@ public class BattleActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("proff_name", professor_name);
+        outState.putInt("progress", pb.getProgress());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         LOG_V("onCreate");
         super.onCreate(savedInstanceState);
@@ -77,6 +84,11 @@ public class BattleActivity extends AppCompatActivity {
 
         this_intent = getIntent();
         professor_name = this_intent.getStringExtra("selected_professor_name");
+
+        if(professor_name == null && savedInstanceState != null){
+            professor_name = savedInstanceState.getString("proff_name");
+        }
+
         pb = (ProgressBar)this.findViewById(R.id.progressBar);
         attackButton = (Button)this.findViewById(R.id.button);
         professorImage = (ImageView)this.findViewById(R.id.professorImage);
@@ -95,6 +107,14 @@ public class BattleActivity extends AppCompatActivity {
                 setProgressBar(pb.getProgress()-10);
             }
         });
+
+        if(savedInstanceState != null){
+            int tmp_pb = savedInstanceState.getInt("progress");
+            if(tmp_pb > 0){
+                pb.setProgress(tmp_pb);
+            }
+        }
+
     }
 
     @Override
